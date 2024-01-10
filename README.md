@@ -33,7 +33,7 @@ To run PetAdapt, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Mnbel555/PetAdapt.git
+   git clone https://github.com/Mnbel555/PetAdoption-App.git
 
 2. Navigate to the PetAdapt directory.
 3. Open the project in Android Studio, compile, and deploy to your phone or emulator.
