@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "933056033526",
+    "project_id": "petadapt-6e193",
+    "storage_bucket": "petadapt-6e193.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933056033526:android:4d841d78de1c96da1232d7",
+        "android_client_info": {
+          "package_name": "ipca.study.petadapt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDng1DW_aGyXLCT1KXAMLhecAHn3Z-QQJQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

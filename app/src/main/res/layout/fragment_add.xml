@@ -1,0 +1,230 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".AddFragment">
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageButton
+            android:id="@+id/toolbar_back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_back"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Ad"
+            android:layout_centerInParent="true"/>
+
+        <ImageButton
+            android:id="@+id/clicktoaddphotos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/add_photo_24"
+            android:background="@null"
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:layout_above="@+id/next_button"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/image_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pick upto 10 images"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/add_images_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image_label"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:spanCount="4"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    tools:listitem="@layout/row_images_picked" />
+
+
+                <TextView
+                    android:id="@+id/pet_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/add_images_rv"
+                    android:text="Pet Details."
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"/>
+
+
+
+
+                <EditText
+                    android:id="@+id/pet_name"
+                    style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pet_details"
+                    android:hint="Pet Name"
+                    android:background="@drawable/border_background"
+                    android:padding="10dp"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/pet_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:layout_below="@+id/pet_name"
+                    android:background="@drawable/border_background"
+                    android:hint="Pet Age"
+                    android:inputType="number"
+                    android:minHeight="48dp" />
+
+
+                <EditText
+                    android:id="@+id/pet_breed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:padding="10dp"
+                    android:background="@drawable/border_background"
+                    android:layout_below="@+id/pet_age"
+                    android:hint="Breed"
+                    android:minHeight="48dp" />
+
+
+                <TextView
+                    android:id="@+id/gender_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sex"
+                    android:textStyle="bold"
+                    android:layout_below="@+id/pet_breed"
+                    android:layout_marginTop="8dp" />
+
+
+                <RadioGroup
+                    android:id="@+id/radioGroupSex"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/gender_heading"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonMale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="Female"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/vaccine_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vaccinated"
+                    android:layout_below="@+id/radioGroupSex"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp" />
+
+                <RadioGroup
+                    android:id="@+id/vaccine_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vaccine_heading"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="4dp">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonVaccinatedYes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Yes"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonVaccinatedNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text="No"
+                        tools:ignore="TouchTargetSizeCheck" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/ad_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/vaccine_group"
+                    android:padding="10dp"
+                    android:background="@drawable/border_background"
+                    android:hint="Ad Title"
+                    android:minHeight="48dp" />
+
+
+                <EditText
+                    android:id="@+id/ad_discription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:hint="Ad Description"
+                    android:inputType="textMultiLine"
+                    android:lines="6"
+                    android:gravity="top"
+                    android:overScrollMode="always"
+                    android:padding="6dp"
+                    android:layout_below="@id/ad_title"
+                    android:background="@drawable/border_background"
+                    android:scrollbarStyle="insideInset"
+                    android:scrollbars="vertical"
+                    android:minHeight="48dp"
+                    tools:ignore="HardcodedText" />
+
+
+            </RelativeLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        android:onClick="onSaveButtonClick"
+        android:background="@color/btn"
+        android:text="Add Pet" />
+
+</RelativeLayout>
+
+
+
+

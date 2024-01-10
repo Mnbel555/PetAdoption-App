@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageButton
+            android:id="@id/toolbar_backAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="TouchTargetSizeCheck"
+            android:background="@null"
+            android:src="@drawable/arrow_back"
+            android:padding="10dp"
+            android:layout_centerVertical="true"/>
+
+        <ImageButton
+            android:id="@+id/toolbar_delete_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_delete_24"
+            android:layout_toStartOf="@+id/toolbar_edit_detail"
+            android:padding="10dp"
+            android:background="@null"
+            android:layout_marginTop="5dp"/>
+
+        <ImageButton
+            android:id="@+id/toolbar_edit_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit"
+            android:layout_toStartOf="@+id/toolbar_fav_detail"
+            android:padding="10dp"
+            android:background="@null"
+            android:layout_marginTop="5dp"/>
+
+        <ImageButton
+            android:id="@+id/toolbar_fav_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fav_icon"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/toolbar_title_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textSize="18dp"
+            android:textColor="@color/black"
+            android:layout_centerInParent="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/quantum_grey"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"/>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/image_slider"
+            android:layout_width="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_height="100dp"/>
+
+        <TextView
+            android:id="@+id/name_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/image_slider"/>
+
+        <TextView
+            android:id="@+id/name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@tools:sample/lorem[5]"
+            android:layout_below="@id/name_Label"
+            style="@style/TextAppearance.MaterialComponents.Body2"/>
+
+        <TextView
+            android:id="@+id/title_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/name_detail"/>
+
+        <TextView
+            android:id="@+id/title_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@tools:sample/lorem[5]"
+            android:layout_below="@id/title_Label"
+            style="@style/TextAppearance.MaterialComponents.Body2"/>
+
+        <TextView
+            android:id="@+id/discription_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discription"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/title_detail"/>
+
+        <TextView
+            android:id="@+id/discription_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@tools:sample/lorem[15]"
+            android:layout_below="@id/discription_Label"
+            style="@style/TextAppearance.MaterialComponents.Body2"/>
+        <TextView
+            android:id="@+id/breed_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breed"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/discription_detail"/>
+
+        <TextView
+            android:id="@+id/breed_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@tools:sample/lorem[1]"
+            android:layout_below="@id/breed_Label"
+            style="@style/TextAppearance.MaterialComponents.Body2"/>
+
+        <TextView
+            android:id="@+id/age_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/breed_detail"/>
+
+        <TextView
+            android:id="@+id/age_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@tools:sample/lorem[1]"
+            android:layout_below="@id/age_Label"
+            style="@style/TextAppearance.MaterialComponents.Body2"/>
+
+        <TextView
+            android:id="@+id/gender_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/age_detail"/>
+
+        <TextView
+            android:id="@+id/gender_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gender_Label"
+         />
+
+        <TextView
+            android:id="@+id/vaccine_Label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vaccine"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/gender_detail"/>
+
+        <TextView
+            android:id="@+id/vaccine_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vaccine_Label"
+            />
+
+
+
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/chat_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:textColor="@color/black"
+        app:cornerRadius="8dp"
+        android:onClick="onChatButtonClick"
+        android:background="#fac8d4"
+        android:text="Adapt Me" />
+
+</RelativeLayout>

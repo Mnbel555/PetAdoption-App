@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ExtraText">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_logo" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout_Login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_logo"
+        android:orientation="vertical"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp">
+
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_logo"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textColorHint="#000000"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_email"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="8dp"
+            android:textColorHint="#000000"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_below="@id/login_password"
+            android:layout_gravity="end"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:minHeight="48dp"
+            android:onClick="onForgotPasswordClick"
+            android:text="Forgot Password?"
+            android:textColor="@android:color/holo_blue_dark" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgot_password"
+            android:layout_marginTop="20dp"
+            android:padding="8dp"
+            android:text="Log In"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:background="@drawable/rounded_button_background"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/goto_signup_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_button"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_hover"
+            android:padding="8dp"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/goto_signup_button"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            >
+
+            <!-- Google Signup Button -->
+            <ImageButton
+                android:id="@+id/google_login_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/google_login_icon"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="Google Sign Up"
+                android:onClick="onGoogleLoginClick"/>
+
+            <!-- Facebook Signup Button -->
+            <ImageButton
+                android:id="@+id/facebook_login_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/facebook_login_icon"
+                android:background="?android:attr/selectableItemBackground"
+                android:contentDescription="Facebook Sign Up"
+                android:onClick="onFacebookLoginClick"
+                android:layout_marginLeft="20dp"
+                /> <!-- Adjust margin as needed -->
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/login_bg"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_below="@id/linear_layout_Login"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/login_bg" />
+
+</RelativeLayout>

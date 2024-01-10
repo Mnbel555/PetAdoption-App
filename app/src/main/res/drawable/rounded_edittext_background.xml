@@ -1,0 +1,12 @@
+
+<!-- res/drawable/rounded_edittext_background.xml -->
+
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText">
+    <solid android:color="#ffffff" /> <!-- Background color, you can change this to your desired color -->
+    <corners android:radius="8dp" /> <!-- Radius to make it curved, adjust as needed -->
+    <stroke android:color="#fac8d4"
+        android:width="2dp" /> <!-- Border color -->
+</shape>
+
