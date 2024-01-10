@@ -15,16 +15,25 @@ Welcome to PetAdapt, an Android app dedicated to connecting pets in need with lo
 ## Description
 
 PetAdapt is a pet adoption app that facilitates the process of finding forever homes for pets in need. Developed using Kotlin and Firebase, this app aims to connect pet lovers with pets available for adoption.
-![App Screen](readme_assets/app_screen.png "App Screen")
+
+![Screenshot 2024-01-10 094924](https://github.com/Mnbel555/PetAdoption-App/assets/125232753/0081def1-6599-4afa-bacf-c75af13f7418)  
+
+![Screenshot 2024-01-10 095124](https://github.com/Mnbel555/PetAdoption-App/assets/125232753/ac7bba8a-a145-4272-a1e2-865dedb6040b)
+
+
+![Screenshot 2024-01-10 101501](https://github.com/Mnbel555/PetAdoption-App/assets/125232753/6a3b99e2-a11f-49ed-bce1-a5c8ed1b640a)
+
+![Screenshot 2024-01-10 095223](https://github.com/Mnbel555/PetAdoption-App/assets/125232753/b7667f0f-a563-4158-9ead-8dc2a37613fd)
 
 ## Features
+
 
 - **User Authentication:** The application provides a secure login system. After successful authentication, users can access the main features of the application.
 - **Personalized Pet Profiles:** Create profiles for each of your pets, including essential details and preferences.
 - **Listed Pets:** Once logged in, users can view a list of pets. These pets are displayed with important details for users to browse through.
 - **Add, Edit, and Delete Pets:** Users have the ability to add new pets to the list, edit existing pet details, and delete pets from the list.
 - **Favorite Pets:** Users can add pets to their favorites for easy access in the future.
-- **Community Interaction:** Connect with other pet owners, share experiences, and seek advice in the PetAdapt community.(UnderGOING)
+- **Community Interaction:** Connect with other pet owners, share experiences, and seek advice in the PetAdapt community.(InProcess)
 
 ## Installation
 
