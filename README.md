@@ -24,6 +24,10 @@ PetAdapt is a pet adoption app that facilitates the process of finding forever h
 ![Screenshot 2024-01-10 101501](https://github.com/Mnbel555/PetAdoption-App/assets/125232753/6a3b99e2-a11f-49ed-bce1-a5c8ed1b640a)
 
 ![Screenshot 2024-01-10 095223](https://github.com/Mnbel555/PetAdoption-App/assets/125232753/b7667f0f-a563-4158-9ead-8dc2a37613fd)
+![Screenshot 2024-01-16 173850](https://github.com/Mnbel555/PetAdoption-App/assets/125232753/61de16d6-8728-4f72-afef-bbd13d021336)
+![Screenshot 2024-01-16 173927](https://github.com/Mnbel555/PetAdoption-App/assets/125232753/eb89f5d4-4e12-4c1a-ae6f-2c4cec82c69e)
+
+
 
 ## Features
 
