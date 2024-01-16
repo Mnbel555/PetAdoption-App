@@ -101,7 +101,7 @@ Now, your PetAdapt app is ready to utilize Firebase for backend services. This i
 </details>
 
 <details>
-    <summary>Chat Activity for storing pets based on database structure</summary>
+    <summary>ChatActivity based on database structure</summary>
 The default structure in app is for demonstration purpose only, this is more convenient as it handles user chat according to petId, therefore it assigns each pet unique id while the default structure sets up chat on recepient user irrespective of pet. thanks    
 
 ## Firebase Data Structure
